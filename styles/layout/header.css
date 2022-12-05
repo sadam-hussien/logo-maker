@@ -1,0 +1,95 @@
+.header {
+  height: var(--header-height);
+}
+
+.brand {
+  cursor: pointer;
+}
+
+.header-search {
+  border: 1px solid var(--bs-gray-300);
+  border-radius: 45px;
+  padding-inline-start: var(--space-md);
+}
+
+.header-search-label {
+  color: var(--primary-color);
+  line-height: 0;
+}
+
+.header-search-input {
+  height: 42px;
+  min-width: 300px;
+  background-color: transparent;
+  padding: 0 var(--space-sm);
+}
+
+.header-lang-switcher {
+  color: var(--bs-body-color);
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--bs-gray-300);
+  border-radius: 50%;
+  text-align: center;
+  font-size: var(--sm-font-size);
+  transition: 0.3s;
+}
+
+.header-lang-switcher:hover {
+  background-color: var(--primary-color);
+  color: var(--bs-white);
+}
+
+.mode-switcher {
+  margin: 0 var(--space-md) -2px;
+}
+
+.mode-switch {
+  margin: 0 8px;
+}
+
+.mode-switch-label {
+  line-height: 0;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.mode-switch-label-active {
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.mode-switch input {
+  width: 2.5em !important;
+  height: 1.3em !important;
+  margin-top: 0 !important;
+  border-color: var(--primary-color) !important;
+  background-color: var(--primary-color);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+}
+
+.mode-switch input:checked {
+  background-color: var(--primary-color) !important;
+}
+
+.login-btn {
+  min-width: 110px;
+  padding: 0 20px;
+  height: 40px;
+  border-radius: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bs-white);
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  background: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: transparent;
+  color: var(--secondary-color);
+}

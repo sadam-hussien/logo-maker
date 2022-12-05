@@ -1,0 +1,78 @@
+:root {
+  --header-height: 100px;
+  --sm-font-size: 14px;
+  --space-sm: 10px;
+  --space-md: 20px;
+  --space-lg: 40px;
+
+  --primary-color: #444676;
+  --secondary-color: #c19a4f;
+}
+
+[lang="ar"] {
+  direction: rtl;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+body:lang(ar) {
+  font-family: "Cairo", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+input:not([type="checkbox"]):focus {
+  outline: 0;
+  box-shadow: none !important;
+  background-color: initial !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none !important;
+}
+
+.my-btn {
+  min-width: 130px;
+  height: 40px;
+  padding: 3px var(--space-md);
+  border-radius: 40px;
+  letter-spacing: 1px;
+}
+
+.btn-lg {
+  min-width: 160px;
+  height: 48px;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn:hover {
+  background: transparent;
+}
+
+.btn-primary:hover {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-secondary:hover {
+  color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+@import "./layout/header.css";
+@import "./layout/navbar.css";
+@import "./home/index.css";

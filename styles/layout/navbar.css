@@ -1,0 +1,10 @@
+.nav-link-item {
+  color: var(--bs-gray-400) !important;
+  padding: var(--space-md) var(--space-md) !important;
+}
+
+.nav-link-item-active {
+  /* border-bottom: 2px solid var(--bs-white); */
+  color: var(--bs-white) !important;
+  /* background-color: var(--secondary-color) !important; */
+}
